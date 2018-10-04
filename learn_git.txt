@@ -1,0 +1,138 @@
+Source: https://www.edureka.co/blog/git-tutorial/
+
+This file is not complete, see more at: https://www.edureka.co/blog/git-tutorial/
+
+Git Tutorial
+
+Learning Git is as easy as using the tool. The motive of this Git tutorial blog is to omit this dilemma from your mind. I am sure with this Git tutorial blog, you will go brimming through all the concepts. 
+
+I hope that you have gone through the basic concepts and terminologies of Git and learned all about Version Control in my first blog of the Git Tutorial series. If you haven¡¯t, please check out my previous blog to get a better understanding of Git.
+
+In this Git Tutorial, you will learn:
+
+    Commands in Git
+    Git operations
+    And some tips and tricks to manage your project effectively with Git.
+
+Now that you know what this Git Tutorial will bring to you, let us begin  :-) 
+
+Before starting with the commands and operations let us first understand the primary motive of Git.
+
+The motive of Git is to manage a project or a set of files as they change over time. Git stores this information in a data structure called a Git repository. The repository is the core of Git.
+
+To be very clear, a Git repository is the directory where all of your project files and the related metadata resides.
+
+Git records the current state of the project by creating a tree graph from the index. It is usually in the form of a Directed Acyclic Graph (DAG).
+
+Before you go ahead, check out this video on Git tutorial to have better in-sight.
+
+Git Tutorial ¨C Commands And Operations In Git
+
+Recommended by 178 users
+Reshma Ahmed Jul 23,2018
+Git Tutorial ¨C Commands And Operations In Git
+Add to Bookmark Email this Post 40.3K    12
+
+Git Tutorial
+
+Learning Git is as easy as using the tool. The motive of this Git tutorial blog is to omit this dilemma from your mind. I am sure with this Git tutorial blog, you will go brimming through all the concepts. 
+
+I hope that you have gone through the basic concepts and terminologies of Git and learned all about Version Control in my first blog of the Git Tutorial series. If you haven¡¯t, please check out my previous blog to get a better understanding of Git.
+
+In this Git Tutorial, you will learn:
+
+    Commands in Git
+    Git operations
+    And some tips and tricks to manage your project effectively with Git.
+
+Now that you know what this Git Tutorial will bring to you, let us begin  :-) 
+
+Before starting with the commands and operations let us first understand the primary motive of Git.
+
+The motive of Git is to manage a project or a set of files as they change over time. Git stores this information in a data structure called a Git repository. The repository is the core of Git.
+
+To be very clear, a Git repository is the directory where all of your project files and the related metadata resides.
+
+Git records the current state of the project by creating a tree graph from the index. It is usually in the form of a Directed Acyclic Graph (DAG).
+
+Before you go ahead, check out this video on Git tutorial to have better in-sight.
+Git and Github Tutorial
+
+Learn DevOps From Experts
+
+Now that you have understood what Git aims to achieve, let us go ahead with the operations and commands.
+Git Tutorial ¨C Operations & Commands
+
+Some of the basic operations in Git are:
+
+    Initialize
+    Add
+    Commit
+    Pull
+    Push
+
+Some advanced Git operations are:
+
+    Branching
+    Merging
+    Rebasing
+
+Let me first give you a brief idea about how these operations work with the Git repositories. Take a look at the architecture of Git below:
+
+Git Architechture - Git Tutorial - Edureka
+
+If you understand the above diagram well and good, but if you don¡¯t, you need not worry, I will be explaining these operations in this Git Tutorial one by one. Let us begin with the basic operations.
+
+You need to install Git on your system first. If you need help with the installation, click here.
+
+In this Git Tutorial, I will show you the commands and the operations using Git Bash. Git Bash is a text-only command line interface for using Git on Windows which provides features to run automated scripts.
+
+After installing Git in your Windows system, just open your folder/directory where you want to store all your project files; right click and select ¡®Git Bash here¡¯.
+
+Git Bash Here - Git Tutorial - Edureka
+
+This will open up Git Bash terminal where you can enter commands to perform various Git operations.
+
+Now, the next task is to initialize your repository. 
+Initialize
+
+In order to do that, we use the command git init. Please refer to the below screenshot.
+
+Git Initialize - Git Tutorial - Edureka
+
+git init creates an empty Git repository or re-initializes an existing one. It basically creates a .git directory with sub directories and template files. Running a git init in an existing repository will not overwrite things that are already there. It rather picks up the newly added templates.
+
+Now that my repository is initialized, let me create some files in the directory/repository. For e.g. I have created two text files namely edureka1.txt and edureka2.txt. 
+
+Let¡¯s see if these files are in my index or not using the command git status. The index holds a snapshot of the content of the working tree/directory, and this snapshot is taken as the contents for the next change to be made in the local repository.
+
+Git status
+
+The git status command lists all the modified files which are ready to be added to the local repository.
+
+Let us type in the command to see what happens:
+
+Git Status - Git Tutorial - Edureka
+
+This shows that I have two files which are not added to the index yet. This means I cannot commit changes with these files unless I have added them explicitly in the index.
+
+Add
+
+This command updates the index using the current content found in the working tree and then prepares the content in the staging area for the next commit.
+
+Thus, after making changes to the working tree, and before running the commit command, you must use the add command to add any new or modified files to the index. For that, use the commands below:
+
+git add <directory>
+
+or
+
+git add <file>
+
+Let me demonstrate the git add for you so that you can understand it better.
+
+I have created two more files edureka3.txt and edureka4.txt. Let us add the files using the command git add -A. This command will add all the files to the index which are in the directory but not updated in the index yet. 
+
+Git Add All - Git Tutorial - Edureka
+
+Now that the new files are added to the index, you are ready to commit them.
+
