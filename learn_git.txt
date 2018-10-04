@@ -124,7 +124,7 @@ Thus, after making changes to the working tree, and before running the commit co
 
 git add <directory>
 
-or
+and
 
 git add <file>
 
